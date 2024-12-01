@@ -1,3 +1,16 @@
+window.onload = function() {
+    const popup = document.getElementById('popup');
+    
+    // Tampilkan popup
+    popup.classList.add('show');
+
+    // Setelah 2 detik, sembunyikan popup
+    setTimeout(() => {
+        popup.classList.remove('show');
+        popup.classList.add('hide');
+    }, 2000);
+};
+
 const aboutBox = document.querySelector('section');
     
 aboutBox.addEventListener('mousedown', (e) => {
