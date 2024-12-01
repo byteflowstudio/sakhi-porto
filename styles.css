@@ -135,3 +135,33 @@ footer p {
     margin: 0;
 }
 
+.popup {
+    position: fixed;
+    top: 50%; /* Pindahkan ke tengah vertikal */
+    left: 50%; /* Pindahkan ke tengah horizontal */
+    transform: translate(-50%, -50%); /* Menggeser popup ke tengah */
+    width: 400px; /* Atur lebar kotak di sini (lebih besar) */
+    background-color: #4CAF50;
+    color: white;
+    padding: 30px; /* Padding yang lebih besar untuk ruang lebih */
+    border-radius: 10px; /* Sudut yang lebih bulat */
+    opacity: 0;
+    transform: translate(-50%, 100%); /* Muncul dari bawah */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000; /* Menempatkan popup di atas konten lainnya */
+}
+
+.popup.show {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Pindah ke tengah saat muncul */
+}
+
+.popup.hide {
+    opacity: 0;
+    transform: translate(100%, -50%); /* Menghilang ke kanan */
+}
+
+.content {
+    z-index: 1; /* Menempatkan konten di bawah popup */
+    text-align: center; /* Mengatur teks agar berada di tengah */
+}
