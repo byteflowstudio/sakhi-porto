@@ -5,11 +5,6 @@
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; /* Mengatur konten dalam kolom */
-    height: 100vh;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #e3f2fd; 
@@ -18,9 +13,6 @@ body {
     background-image: url('https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png');
     background-size: cover;
     background-position: center;
-    margin: 0;
-    padding: 20px;
-    box-sizing: border-box;
 }
 
 header {
