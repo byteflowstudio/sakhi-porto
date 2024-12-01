@@ -141,8 +141,8 @@ footer p {
     left: 50%; /* Pindahkan ke tengah horizontal */
     transform: translate(-50%, -50%); /* Menggeser popup ke tengah */
     width: 400px; /* Atur lebar kotak di sini (lebih besar) */
-    background-color: #010101;
-    color: white;
+    background-color: #19faeb;
+    color: black;
     padding: 30px; /* Padding yang lebih besar untuk ruang lebih */
     border-radius: 10px; /* Sudut yang lebih bulat */
     opacity: 0;
